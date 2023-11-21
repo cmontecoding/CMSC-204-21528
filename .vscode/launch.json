@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DoubleLinkedListDriver",
+            "request": "launch",
+            "mainClass": "DoubleLinkedListDriver",
+            "projectName": "Assignment3"
+        },
+        {
+            "type": "java",
+            "name": "CourseDBGUI",
+            "request": "launch",
+            "mainClass": "CourseDBGUI",
+            "projectName": "Assignment4"
+        },
+        {
+            "type": "java",
+            "name": "MorseCodeDriverFX",
+            "request": "launch",
+            "mainClass": "MorseCodeDriverFX",
+            "projectName": "Assignment5"
+        },
+        {
+            "type": "java",
+            "name": "DriverFX",
+            "request": "launch",
+            "mainClass": "DriverFX",
+            "projectName": "Assignment6"
+        },
+        {
+            "type": "java",
+            "name": "JUnit_Lab/main2",
+            "request": "launch",
+            "mainClass": "JUnit_Lab/main2",
+            "projectName": "JUnit_Lab"
+        },
+        {
+            "type": "java",
+            "name": "CarFrame",
+            "request": "launch",
+            "mainClass": "CarFrame",
+            "projectName": "Thread_Lab"
+        }
+    ]
+}
