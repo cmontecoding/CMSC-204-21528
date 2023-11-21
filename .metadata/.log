@@ -499,3 +499,8 @@ Binding(COMMAND+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-11-19 19:33:16.434
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-11-19 19:33:16.434
+!MESSAGE The project description file (.project) for 'Assignment6' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
