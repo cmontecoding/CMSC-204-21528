@@ -11,7 +11,7 @@ import java.util.HashSet;
 import javax.swing.JOptionPane;
 
 //TODO STUDENT: edit the class header so that ChatServer can run in a thread
-public class ChatServer  { 
+public class ChatServer implements Runnable { 
     private String name;
     private Socket clientSocket;
     private BufferedReader in;
@@ -44,11 +44,13 @@ public class ChatServer  {
         ServerSocket listener = null;
 		try {
 			//TODO STUDENT: create a server socket
-			
-			//System.out.println("The chat server is running.");
+			listener = new ServerSocket(CHAT_ROOM_PORT);
+			System.out.println("The chat server is running.");
             while (true) {	
             	//TODO STUDENT: listen for a client to join, then setup input and output channels
-
+                clientSocket = listener.accept();
+                in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                out = new PrintWriter(clientSocket.getOutputStream(), true);
                 // Request a name from this client.  Keep requesting until
                 // a name is submitted that is not already used.  Note that
                 // checking for the existence of a name and adding the name
